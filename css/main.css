@@ -96,7 +96,7 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: #222;
   height: 100%;
   width: 100%;
 }
@@ -114,19 +114,25 @@ footer {
   background-color: #222;
   height: 80px;
   width: 100%;
+  margin: 25px 25px 25px 25px;
 }
 
 main {
-  background-color: #ccc;
+  background-color: #222;
   height: 250px;
   width: 100%;
+  border-bottom: solid 1px #fff;
+}
+
+footer {
+  border-top: solid 1px #fff;
 }
 
 header,
 footer,
 main {
   display: flex;
-  justify-content: center;
+  justify-content:flex-start;
   align-items: center;
   /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
 }
@@ -139,10 +145,18 @@ main {
   align-items: center;
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.25em;
+  font-size: 1em;
   height: auto;
+  background-color: #222;
+  width: 30%;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
+#div-1, #div-2 {
+  border-right: solid 1px #fff;
+  padding-right:25px;
+}
 .wrapper span {
   font-family: 'Lora', sans-serif;
   font-size: 1.3em;
@@ -171,6 +185,27 @@ justify-content:space-between;
   height: 200px;
 }
 
+.footer-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.social-icons {
+  display:flex;
+  justify-content: space-between;
+  margin: 10px 10px 10px 10px;
+}
+h1 {
+  font-family:'Lora', sans-serif;
+  font-size: 4em;
+}
+h2 span {
+  font-family:'Lora', sans-serif;
+}
+
+p span {
+  font-family:'Lora', sans-serif;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
